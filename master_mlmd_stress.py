@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/10bNbV8mFLzdv4Xv4K7_8ZKw8o6WFudAH
 """
 
-!python master_data_stress.py
-
 import h5py
 import numpy as np
 import matplotlib.pyplot as plt

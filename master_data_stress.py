@@ -131,7 +131,7 @@ radyy_original_j = fun_sgyyi(alpxx_original_j, sigyy_original_j, thexx_original_
 radxy_original_j = fun_sgxyi(alpxx_original_j, sigxy_original_j, thexx_original_i)
 
 data_num         = alpxx_original_j.shape[0]
-print('data_num = {}'.format(data_num))
+#print('data_num = {}'.format(data_num))
 
 ## wrap negetive radials 
 ind_negetive                   = radxx_original_j < 0
@@ -148,7 +148,7 @@ radxy_original_j[ind_negetive] = np.abs(radxy_original_j[ind_negetive])
 
 
 data_num         = radxy_original_j.shape[0]
-print('data_num = {}'.format(data_num))
+#print('data_num = {}'.format(data_num))
 
 ind_xx = radxx_original_j >= d_star
 ind_yy = radyy_original_j >= d_star
@@ -179,7 +179,7 @@ sigyy_ubiasedd_i = fun_sgyy(alpha_original_j, radia_original_j, theta_original_i
 sigxy_ubiasedd_i = fun_sgxy(alpha_original_j, radia_original_j, theta_original_i)
 
 data_num         = radia_original_j.shape[0]
-print('data_num = {}'.format(data_num))
+#print('data_num = {}'.format(data_num))
 
 ## Check out some histograms
 fig, axs = plt.subplots(3, 2,figsize=(10,12))
